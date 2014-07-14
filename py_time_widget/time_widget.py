@@ -37,16 +37,12 @@ times = {
     "quarterly": [0, 15, 30, 45]
 }
 
-print(times[arg])
-
 # get time on how often to print the time
 scheduler = {
     "full": 60,
     "half": 30,
     "quarterly": 15
 }
-
-print(scheduler[arg])
 
 def get_current_min():
     cur_min = datetime.strftime(datetime.now(), "%M")
@@ -79,7 +75,6 @@ while True:
     now = get_current_min()  # check for current minute
     if int(now) in times[arg]:
         schedule.every(scheduler[arg]).minutes.do(print_time)
-        print_time()
         while True:
             schedule.run_pending()
             sleep(10)
