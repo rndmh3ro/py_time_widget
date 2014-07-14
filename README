@@ -6,4 +6,4 @@ Requires libnotify and python-package schedule to be installed.
 
 usage: time_widget.py [-h] [-s SCHEDULE]
 
-![](https://i.imgur.com/XySCoqP.gif)
+![gif](https://i.imgur.com/XySCoqP.gif)
